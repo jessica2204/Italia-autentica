@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre la Italia auténtica con experiencias culturales genuinas más allá del turismo tradicional">
+    <title>Italia Auténtica - Vive la Experiencia Real</title>
+    <!-- CSS Estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <img src="image/logo (1).png" alt="Logo Italia Auténtica">
+        </div>
+        <button id="btn-menu-hamburguesa" class="btn-hamburguesa" aria-label="Abrir menú" aria-expanded="false">
+            <span class="linea linea1"></span>
+            <span class="linea linea2"></span>
+            <span class="linea linea3"></span>
+        </button>
+        <nav id="navegacion" class="navegacion-principal" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html" aria-current="page" data-i18n="inicio">INICIO</a></li>
+                <li><a href="rutas.html" data-i18n="rutas">RUTAS</a></li>
+                <li><a href="experiencias.html" data-i18n="experiencias">EXPERIENCIAS</a></li>
+                <li><a href="#comunidad" data-i18n="comunidad">COMUNIDAD</a></li>
+                <li><a href="#contacto" data-i18n="contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="idioma">
+            <label for="selector-idioma" class="sr-only">Seleccionar idioma</label>
+            <select id="selector-idioma" aria-label="Cambiar idioma">
+                <option value="es">Español</option>
+                <option value="en">Inglés</option>
+            </select>
+        </div>
+    </header>
+    
+    <!-- Contenido Principal -->
+    <main id="inicio">
+        <!-- Sección Hero con video -->
+        <section class="hero" aria-label="Banner principal">
+            <video muted autoplay loop aria-hidden="true">
+                <source src="./video/67201-521635037_small.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <div class="capa-oscura" aria-hidden="true"></div>
+            <div class="hero-contenido">
+                <!-- El mensaje personalizado se insertará aquí dinámicamente -->
+                <h1 data-i18n="tituloHero">DESCUBRE ITALIA</h1>
+                <p data-i18n="subtituloHero">Explora rutas que conectan con la esencia italiana, más allá del turismo</p>
+                <a href="rutas.html" class="btn-principal" data-i18n="btnExploraRutas">EXPLORA RUTAS</a>
+            </div>
+        </section>
+
+        <!-- Sección Bienvenida -->
+        <section class="bienvenida" id="experiencias">
+            <div class="contenido-bienvenida">
+                <h2 data-i18n="eligeComo">Elige cómo quieres vivir Italia</h2>
+                <p data-i18n="bienvenidaDesc">Conectamos viajeros con experiencias culturales genuinas, más allá del turismo tradicional. 
+                    La riqueza de Italia radica en sus diferencias regionales. Cada región tiene su propia identidad, 
+                    desde la elegancia industrial del norte hasta la pasión mediterránea del sur, esto es crucial 
+                    porque permite ofrecer múltiples experiencias en un solo país.</p>
+            </div>
+        </section>
+
+        <!-- EL SLIDER SE INSERTARÁ AQUÍ DINÁMICAMENTE POR JAVASCRIPT -->
+
+        <!-- Sección Rutas Destacadas -->
+        <section class="rutas-destacadas" id="rutas">
+            <h2 data-i18n="agenda">Agenda</h2>
+            <div class="contenedor-rutas">
+                <article class="tarjeta-ruta">
+                    <div class="imagen-ruta">
+                        <img src="image/sean-sweeney-HC338Uz4zGc-unsplash.jpg" alt="Vista panorámica de Venecia con canales">
+                    </div>
+                    <div class="info-ruta">
+                        <h3 data-i18n="norteItalia">Norte de Italia</h3>
+                        <p data-i18n="norteDesc">Venecia, Milán, Bolonia, Trieste y los impresionantes Lagos de Garda. Descubre la elegancia del norte italiano.</p>
+                        <a href="rutas.html" class="btn-secundario" aria-label="Ver más sobre Norte de Italia" data-i18n="verMas">Ver más</a>
+                    </div>
+                </article>
+                
+                <article class="tarjeta-ruta">
+                    <div class="imagen-ruta">
+                        <img src="image/federico-di-dio-photography-imDFBYDnqI0-unsplash.jpg" alt="Paisaje de viñedos en la Toscana">
+                    </div>
+                    <div class="info-ruta">
+                        <h3 data-i18n="laToscana">La Toscana</h3>
+                        <p data-i18n="toscanaDesc">Toscana, viñedos, arte renacentista y pueblos medievales. La esencia de la Italia tradicional.</p>
+                        <a href="rutas.html" class="btn-secundario" aria-label="Ver más sobre La Toscana" data-i18n="verMas">Ver más</a>
+                    </div>
+                </article>
+                
+                <article class="tarjeta-ruta">
+                    <div class="imagen-ruta">
+                        <img src="image/daniele-levis-pelusi-jTknOGI18us-unsplash.jpg" alt="Costa Amalfitana al atardecer">
+                    </div>
+                    <div class="info-ruta">
+                        <h3 data-i18n="surItalia">Sur de Italia</h3>
+                        <p data-i18n="surDesc">Costa Amalfitana, Sicilia, Nápoles, Matera y la pasión mediterránea en su máxima expresión.</p>
+                        <a href="rutas.html" class="btn-secundario" aria-label="Ver más sobre Sur de Italia" data-i18n="verMas">Ver más</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Por Qué Elegirnos -->
+        <section class="por-que">
+            <h2 data-i18n="porQueElegir">¿Por Qué Elegir Italia Auténtica?</h2>
+            <div class="contenedor-beneficios">
+                <article class="beneficio">
+                    <div class="icono" role="img" aria-label="Icono de arte">🎨</div>
+                    <h3 data-i18n="culturaReal">Cultura Real</h3>
+                    <p data-i18n="culturaDesc">Experiencias con locales, artesanos y tradiciones genuinas</p>
+                </article>
+                
+                <article class="beneficio">
+                    <div class="icono" role="img" aria-label="Icono de gastronomía">🍝</div>
+                    <h3 data-i18n="gastronomia">Gastronomía</h3>
+                    <p data-i18n="gastronomiaDesc">Descubre la verdadera cocina italiana región por región.</p>
+                </article>
+                
+                <article class="beneficio">
+                    <div class="icono" role="img" aria-label="Icono de patrimonio">🏛️</div>
+                    <h3 data-i18n="patrimonio">Patrimonio</h3>
+                    <p data-i18n="patrimonioDesc">Acceso a sitios históricos con contexto cultural profundo</p>
+                </article>
+                
+                <article class="beneficio">
+                    <div class="icono" role="img" aria-label="Icono de sostenibilidad">🌍</div>
+                    <h3 data-i18n="sostenible">Sostenible</h3>
+                    <p data-i18n="sostenibleDesc">Turismo responsable que beneficia a comunidades locales</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Testimonios -->
+        <section class="testimonios">
+            <h2 data-i18n="experienciasUnicas">Experiencias Únicas Locales</h2>
+            <div class="contenedor-testimonios">
+                <article class="testimonio">
+                    <p data-i18n="testimonio1">"Una experiencia inolvidable. Conocí la verdadera Italia, lejos de los lugares turísticos habituales."</p>
+                    <span class="autor" data-i18n="autor1">- Katherin Nayibe Calderón, Colombia</span>
+                </article>
+                
+                <article class="testimonio">
+                    <p data-i18n="testimonio2">"Las rutas gastronómicas fueron excepcionales, cada comida era una historia."</p>
+                    <span class="autor" data-i18n="autor2">- David Castillo Martínez, Chile</span>
+                </article>
+                
+                <article class="testimonio">
+                    <p data-i18n="testimonio3">"Conectar con artesanos locales hizo que mi viaje fuera único y significativo."</p>
+                    <span class="autor" data-i18n="autor3">- Ana Rogerlia, Argentina</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección llamado a la acción -->
+        <section class="cta" id="comunidad">
+            <h2 data-i18n="listoParaVivir">¿Listo Para Vivir Una Italia Diferente?</h2>
+            <p data-i18n="uneteComunidad">Únete a nuestra comunidad de viajeros apasionados por la cultura</p>
+            <a href="rutas.html" class="btn-principal" data-i18n="creaRuta">Crea Tu Ruta Personalizada</a>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer id="contacto">
+        <div class="contenedor-footer">
+            <div class="columna-footer">
+                <h3 data-i18n="italiAutentica">Italia Auténtica</h3>
+                <p data-i18n="puertalVerdadera">Tu puerta a la verdadera experiencia italiana</p>
+            </div>
+            
+            <div class="columna-footer">
+                <h3 data-i18n="contacto">Contacto</h3>
+                <p><a href="mailto:jjove076@gmail.com"><span data-i18n="emailLabel">Email:</span> jjove076@gmail.com</a></p>
+                <p><a href="tel:+573168696366"><span data-i18n="telLabel">Tel:</span> +57 316 869 6366</a></p>
+            </div>
+            
+            <div class="columna-footer">
+                <h3 data-i18n="siguenos">Síguenos</h3>
+                <p>
+                    <a href="#facebook" data-i18n="facebook">Facebook</a> | 
+                    <a href="#instagram" data-i18n="instagram">Instagram</a> | 
+                    <a href="#twitter" data-i18n="twitter">Twitter</a> |
+                </p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p data-i18n="copyright">&copy; 2025 Italia Auténtica. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <!-- Botón para subir -->
+    <button id="btn-subir" class="btn-subir" aria-label="Subir al inicio" title="Ir al inicio">
+        ↑
+    </button>
+    
+    <!-- JavaScript -->
+    <script src="js/traducciones.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
